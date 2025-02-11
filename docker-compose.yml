@@ -4,6 +4,7 @@ services:
     image: fjhuete/django:${VERSION_DJANGO}
     restart: always
     environment:
+      URL_BASE: ${URL_BASE}
       DB_HOST: ${DB_HOST}
       DB_USER: ${DB_USER}
       DB_PASS: ${DB_PASS}
